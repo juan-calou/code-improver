@@ -21,7 +21,7 @@ function App() {
         model: "text-davinci-003",
         prompt: generatePrompt(text),
         temperature: 0.6,
-        max_tokens: 100,
+        max_tokens: 2048,
       })
       .then(res => {
         if (res.status === 200) {
